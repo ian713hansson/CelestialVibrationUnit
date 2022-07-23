@@ -35,22 +35,3 @@ Link: [Trello] (https://trello.com/b/0MYJvn4Y/celestial-vibration-unit)
 
 ---
 
-#### **_TO DO_**
-
-- [] ERD
-- [] Setting up Schema: states, coasters
-- [] Seeding
-- [] Defining variables and pulling into database
-- [] Making calls to db from Middleware
-- [] Design components (wireframe)
-- [] React: import
-- [] Axios calls
-- [] Utilizing useEffect and useState where needed
-- [] Map components on Home page
-- [] Passing in props/Hooks
-- [] Assigning classes and id’s to divs
-- [] Styling
-
----
-
-#### **_Credits_**
