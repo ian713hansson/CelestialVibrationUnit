@@ -2,13 +2,13 @@
 
 ## Date: 7/23/2022
 
-### By: Ian Hansson | Alex Campo | Eric Deleon
+### By: Ian Hansson
 
 ---
 
 #### **_Description_**
 
-A site for the modular synthesizer Celestial Vibration Unit
+A site for the modular synthesizer Celestial Vibration Unit, where you can explore its contents and listen to samples of its sounds, become a member and add your own dream modules to its contents
 
 ---
 
