@@ -38,12 +38,28 @@ const main = async () => {
             description: 'Strymon always know how to access the cosmos in a beautiful way. This beautiful module is not just a sparkly and incredibly lush cavernous reverb, but enhances sounds with chorus, flanging and modulated delays. In addition to being an extremely advanced Karplus-Strong String synthesis module capable of travelling over 8 octaves. Starlab truly is a rocketship. '
         },
         {
-            name: '',
-            manufacturer: '',
-            function: [],
-            size: '',
+            name: 'Mimeophon',
+            manufacturer: 'Make Noise',
+            function: ['Delay', 'Effect', 'Dual/Stereo', 'Sampling', 'Digital'],
+            size: '16 HP',
             image: '',
-            description: ''
+            description: 'The Mimeophon, from Greek mimeo (repeat/copy) and phon (sound), is a modern take on various historical sound copying, echo and repeating devices. It allows for Stereo modulations of Time, Space and Timbre of Mono or Stereo sound sources, and is capable of modulating and morphing time scales of repeated sound from micro-sound to not to phrase length while also coloring and spatializing the repeats. Basically it will take what you throw at it and let you run wild and lose yourself in a swirling universe you have created, are inhabiting and quite frankly stuck in...'
+        },
+        {
+            name: 'arbhar',
+            manufacturer: 'Instruo',
+            function: ['Oscillator', 'Sampling', 'Effect', 'Delay', 'Digital', 'Dual/Stereo', 'Pitch Shifter', 'Reverb', 'Granular Synth'],
+            size: '18 HP',
+            image: '',
+            description: 'The arbhar is a granular processor in which sampled audio can be chopped into tiny grains, scattered, shaped, re-pitched, reversed and layered for an endless range of audio manipulation from seamless frozen tones to mutated acousmatic madess. Features a condesnor microphone set into the front panel, built in audio analysis for automatic sampling and internal modulation over various parameters. Personally, I have never heard anything like what this module can produce, and I use it at every chance I get.'
+        },
+        {
+            name: 'Pamela`s NEW Workout',
+            manufacturer: 'ALM Busy Circuits',
+            function: ['Clock Generator', 'Digital', 'LFO', 'Clock Modulator', 'Random', 'Sequencer', 'Envelope Generator', 'Quantizer'],
+            size: '8 HP',
+            image: '',
+            description: 'Pam`s is a compact programmable clocked modulation source which provides 8 highly editable outputs producing various control voltage signals correlated and synced to a BPM based master clock that runs from 10-300 BPM giving this little module the power to be the brains of a patch as large as you can dream up.'
         },
         {
             name: '',
