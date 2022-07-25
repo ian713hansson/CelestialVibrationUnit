@@ -94,12 +94,37 @@ const main = async () => {
             description: 'A classic ADSR envelope generator, which has CV control over all segments.'
         },
         {
-            name: '',
-            manufacturer: '',
-            function: [],
-            size: '',
+            name: 'vinca',
+            manufacturer: 'Instruo',
+            function: ['Dual/Stereo', 'VCA', 'Ring Modulator'],
+            size: '4 HP',
             image: '',
-            description: ''
+            description: 'A two channel voltage controlled amplifier built by the talented Scots over at Instruo so you know it works incredibly.'
+        },
+        {
+            name: 'Bassline',
+            manufacturer: 'Erica Synths',
+            function: ['Filter', 'Oscillator', 'Synth Voice'],
+            size: '14 HP',
+            image: '',
+            description: 'A full analogue synth voice for ultimate acid basslines, featuring three waveforms, a filter inspired by Erica Synths Acidbox and transistor based suboscillator and two BBDs that emulate VCO detune. In short, send a sequencer into its 1v per octave and become better than most EDM musicians out there today.'
+        },
+        {
+            name: 'Black VCO2',
+            manufacturer: 'Erica Synths',
+            function: ['LFO', 'Oscillator', 'Waveshaper'],
+            size: '12 HP',
+            image: '',
+            description: 'Simultaneous sine, triangle, saw and pulse wave outputs with stable tracking across 8 octaves. 2 built in modulation LFOs and a saw waveshaper. Take all four of these waves outputs into the Intellijel Mutamix and mix them all together for a big, thick synth voice with which you can easily blast off into the farthest reaches of the galaxy.'
         }
     ]
+    await Module.insertMany(module)
+    console.log('Made some modules')
 }
+
+const run = async () => {
+    await main()
+    db.close()
+}
+
+run()
