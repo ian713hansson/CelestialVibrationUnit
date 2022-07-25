@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
+let MONGODB_URI = 'mongodb://127.0.0.1:27017/modulesDatabase'
 
 mongoose
-  .connect('mongodb://127.0.0.1:27017/modulesDatabase')
+  .connect(MONGODB_URI)
   .then(() => {
     console.log('Successfully connected to MongoDB.')
   })
