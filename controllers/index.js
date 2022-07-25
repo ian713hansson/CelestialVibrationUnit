@@ -3,7 +3,7 @@ const Module = require('../models/module');
 const createModule = async (req, res) => {
     try {
         const module = await new Module(req.body)
-        await module.save()
+        await newModule.save()
         return res.status(201).json({
             module,
         });
