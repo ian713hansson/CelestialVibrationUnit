@@ -62,6 +62,38 @@ const main = async () => {
             description: 'Pam`s is a compact programmable clocked modulation source which provides 8 highly editable outputs producing various control voltage signals correlated and synced to a BPM based master clock that runs from 10-300 BPM giving this little module the power to be the brains of a patch as large as you can dream up.'
         },
         {
+            name: 'Magneto',
+            manufacturer: 'Strymon',
+            function: ['Delay', 'Dual/Stereo', 'Effect', 'Reverb', 'Sampling', 'Looper', 'Oscillator'],
+            size: '28 HP',
+            image: '',
+            description: 'Magneto is a stereo multi-head tape delay, looper, phrase sampler, reverb, clock multiplier and chaotic oscillator. Capable of taking a mono signal and turning it into complex orchestrations adding rich stereo dimension with the warmth and subtle distortiion of magnetic tape. The makers at Strymon studied vintage tape echo machines relentlessly and it shows. This writers personal favorite is the wow and flutter knob which when cranked, sounds like a warp speed both back in time and straight ahead into the future.'
+        },
+        {
+            name: 'Mother-32',
+            manufacturer: 'Moog Music Inc.',
+            function: ['Synth Voice', 'Clock Generator', 'Filter', 'LFO', 'MIDI', 'Mixer', 'Multiple', 'Sequencer'],
+            size: '60 HP',
+            image: '',
+            description: 'Rich with that classic Moog sound, the Mother-32 is a full synth in its own right with the capability to work seamlessly within a modular system. Its 32 step sequencer is extremely customizable and intuitive. It provides its user with a diverse array of creative tools to inspire endless sonic exploration.'
+        },
+        {
+            name: 'i-o47',
+            manufacturer: 'Instruo',
+            function: ['Filter'],
+            size: '14 HP',
+            image: '',
+            description: 'i-o47 is a multimode resonator/filter which draws its circuit design inspiration from the classic 1047 module of the ARP2500 system. Built upon the classic architecture of the original, the design was refined with extensive experimentation using modern components alongside classic configurations. Various refinements were also added such as voltage control over variable notch offset which opens new worlds of dynamic sweeps and shaping.'
+        },
+        {
+            name: 'Ceis',
+            manufacturer: 'Instruo',
+            function: ['Envelope Generator', 'Clock Modulator'],
+            size: '8 HP',
+            image: '',
+            description: 'A classic ADSR envelope generator, which has CV control over all segments.'
+        },
+        {
             name: '',
             manufacturer: '',
             function: [],
