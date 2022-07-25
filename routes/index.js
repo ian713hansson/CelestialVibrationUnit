@@ -8,4 +8,10 @@ router.post('/modules', controllers.createModule)
 
 router.get('/modules', controllers.getAllModules)
 
+router.get('/modules/:id', controllers.getModuleById)
+
+router.put('/modules/:id', controllers.updateModule)
+
+router.delete('/modules/:id', controllers.deleteModule)
+
 module.exports = router
