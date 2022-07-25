@@ -8,7 +8,7 @@
 
 #### **_Description_**
 
-A site for the modular synthesizer Celestial Vibration Unit, where you can explore its contents and listen to samples of its sounds, become a member and add your own dream modules to its contents
+A site for the modular synthesizer Celestial Vibration Unit, where you can explore its contents and listen to samples of its sounds, become a member and add comments/reviews of modules and sounds.
 
 ---
 
