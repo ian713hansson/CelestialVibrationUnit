@@ -13,6 +13,11 @@ const Explore = () => {
         }
         getModules()
     })
+    console.log(modules)
+    if(!modules){
+        return <h1>Loading please wait</h1>
+    } else {
+
     return (
         <div className="modules">
             <h1>Modules</h1>
@@ -31,5 +36,5 @@ const Explore = () => {
         </div>
     )
 }
-
+}
 export default Explore

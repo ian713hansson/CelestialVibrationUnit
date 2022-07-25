@@ -2,10 +2,10 @@ const Module = require('../models/module');
 
 const createModule = async (req, res) => {
     try {
-        const module = await new Module(req.body)
+        const newModule = await new Module(req.body)
         await newModule.save()
         return res.status(201).json({
-            module,
+            newModule,
         });
     } catch (error) {
         return res.status(500).json({ error: error.message })
@@ -38,7 +38,23 @@ const getModuleById = async (req, res) => {
         return res.status(500).send(error.message)
     }
 }
-
+// const updateObject = async (req, res) => {
+//     try {
+//         //making sure we have the right object
+//         const objectId = req.params.objectId
+//         //creating a new object that is being updated via the body of the request
+//         const updatedObject = await Object.update(req.body, {
+//             //targeting the specific object by its id
+//             where: {id: objectId},
+//             //sending back the updated version
+//             returning: true
+//         })
+//         res.send(updatedObject)
+//     }
+//     catch(error){
+//         throw error
+//     }
+// }
 const updateModule = async (req, res) => {
     try {
         const module = await Module.findByIdAndUpdate(req.params.id, req.body, { new: true})
@@ -47,7 +63,19 @@ const updateModule = async (req, res) => {
         return res.status(500).send(error.message)
     }
 }
-
+// const deleteObject = async (req,res) => {
+//     try{
+//         //make sure we are targeting the correct object
+//         const objectId = req.params.objectId
+//         //how to destroy objects
+//         await Object.destroy({where: {id: objectId}})
+//         //a success message telling us we've destroyed the correct object
+//         res.send({msg: `object with ID ${objectId} deleted`})
+//     }
+//     catch(error){
+//         throw error
+//     }
+// }
 const deleteModule = async (req, res) => {
     try {
         const { id } = req.params
