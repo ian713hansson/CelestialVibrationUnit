@@ -17,13 +17,14 @@ header nav a{
   height: 150px;
 }
 
-
-.about {
-  justify-content: center;
-  margin-left: 10vh;
-  margin-right: 10vh;
+.card {
+  align-self: center;
+  background-color:#63275c ;
+  border-radius: 10px;
+  max-width: 75vh;
 }
 
-.home-image div {
-  
+.card img{
+  width: auto;
+  border-radius: 10px;
 }
