@@ -1,5 +1,6 @@
 const Module = require('../models/module');
 
+//working
 const createModule = async (req, res) => {
     try {
         const newModule = await new Module(req.body)
@@ -55,6 +56,9 @@ const getModuleById = async (req, res) => {
 //         throw error
 //     }
 // }
+
+//This works
+
 const updateModule = async (req, res) => {
     try {
         const module = await Module.findByIdAndUpdate(req.params.id, req.body, { new: true})
@@ -76,6 +80,8 @@ const updateModule = async (req, res) => {
 //         throw error
 //     }
 // }
+
+//This works
 const deleteModule = async (req, res) => {
     try {
         const { id } = req.params

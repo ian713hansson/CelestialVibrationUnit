@@ -15,8 +15,9 @@ const Explore = () => {
     })
     console.log(modules)
     if(!modules){
-        return <h1>Loading please wait</h1>
-    } else {
+        return <h1>Loading please wait...</h1>
+    } else 
+    {
 
     return (
         <div className="modules">
@@ -30,6 +31,7 @@ const Explore = () => {
                         size={modules.size}
                         function={modules.function}
                         description={modules.description}
+                        image={modules.image}
                     />
                 ))}
             </section>

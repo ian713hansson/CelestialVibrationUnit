@@ -1,18 +1,5 @@
-import { Link } from 'react-router-dom'
-
-const Header = () => {
-
-  return (
-    <header>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About Me</Link>
-        <Link to="/explore">Explore</Link>
-        <Link to="/listen">Listen</Link>
-        <Link to="/member">Become a Member</Link>
-      </nav>
-    </header>
-  )
+const Home = () => {
+  return <h1>I am home</h1>
 }
+export default Home
 
-export default Header
