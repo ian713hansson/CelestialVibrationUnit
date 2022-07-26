@@ -1,5 +1,9 @@
 const Home = () => {
-  return <h1>I am home</h1>
+  return (
+    <div className="home-image">
+  <img src="https://cdn.spacetelescope.org/archives/images/screen/heic0611b.jpg"/>
+  </div>
+  )
 }
 export default Home
 

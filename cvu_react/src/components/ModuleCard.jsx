@@ -1,7 +1,7 @@
 const ModuleCard = (props) => {
 
     return (
-        <div className="module-card" onClick={(props.onClick)}>
+        <div className="card module-card" onClick={(props.onClick)}>
 
             <div className="img-wrapper">
                 <img src={props.image} alt={props.name}/>

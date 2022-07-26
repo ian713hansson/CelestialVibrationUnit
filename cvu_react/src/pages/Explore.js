@@ -8,12 +8,13 @@ const Explore = () => {
     useEffect(() => {
         const getModules = async () => {
             const res = await axios.get('http://localhost:3001/api/modules')
-            console.log(res.data)
-            setModules(res.data.results)
+            console.log(res.data.modules)
+            setModules(res.data.modules) 
+            console.log(modules)
         }
         getModules()
-    })
-    console.log(modules)
+    }, [])
+   
     if(!modules){
         return <h1>Loading please wait...</h1>
     } else 
@@ -24,7 +25,8 @@ const Explore = () => {
             <h1>Modules</h1>
             <section className="container-grid">
                 {modules.map((modules)=>(
-                    <ModuleCard
+                   <div>
+                   <ModuleCard
                         key={modules.name}
                         name={modules.name}
                         manufacturer={modules.manufacturer}
@@ -33,6 +35,7 @@ const Explore = () => {
                         description={modules.description}
                         image={modules.image}
                     />
+                    </div>
                 ))}
             </section>
         </div>

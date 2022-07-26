@@ -1,19 +1,29 @@
-* { background-color: #842E86
-
-}
-
-header {
-  background-color: #842E86;
-  display: flex-row;
-  justify-content: flex-start;
-  margin-top: 50px;
-  align-items: center;
-  height: 150px;
-  color: #85BDF0
-}
 
 header nav a{
-  color: #85BDF0;
-  margin-left: 40px;
+  color: #edab28;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  height: 150px;
+}
+
+
+.about {
+  justify-content: center;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.home-image div {
+  
+}
