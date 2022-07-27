@@ -19,7 +19,6 @@ const Explore = () => {
         return <h1>Loading please wait...</h1>
     } else 
     {
-
     return (
         <div className="modules">
             <h1>Modules</h1>
@@ -28,6 +27,7 @@ const Explore = () => {
                    <div>
                    <ModuleCard
                         key={modules.name}
+                        id={modules._id}
                         name={modules.name}
                         manufacturer={modules.manufacturer}
                         size={modules.size}

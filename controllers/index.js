@@ -1,17 +1,17 @@
 const Module = require('../models/module');
-
+const { db } = require('mongodb') 
 //working
 const createModule = async (req, res) => {
     try {
         const newModule = await new Module(req.body)
         await newModule.save()
         return res.status(201).json({
-            newModule,
+            newModule, 
         });
-    } catch (error) {
-        return res.status(500).json({ error: error.message })
+    } catch (error) { 
+        throw error
     }
-}
+} 
 
 
 //this works
