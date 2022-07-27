@@ -1,15 +1,18 @@
 import axios from 'axios'
 
+
 const ModuleCard = (props) => {
 console.log(props)
-const handleDelete = async () => {
+
+const deleteModule = async (id) => {
     console.log('hello', props.id, props.name)
-    const res = await axios.delete (`http://localhost3001/api/modules/${props.id}`)
+    await axios.delete(`http://localhost:3001/api/modules/${props.id}`)
+    console.log('module deleted')
 }
 
 const handleUpdate = async () => {
-    const { name, manufacturer, size, description} = (props)
-    axios.put(`http://localhost3001/api/modules/${props.id}`, {
+    const { name, manufacturer, size, description } = (props)
+    axios.put(`http://localhost:3001/api/modules/${props.id}`, {
         name: {name},
         manufacturer: {manufacturer},
         size: {size},
@@ -30,7 +33,7 @@ const handleUpdate = async () => {
                 <h3>{props.function}</h3>
                 <h3>{props.size}</h3>
                 <p>{props.description}</p>
-                <button onClick={handleDelete}>Delete</button>
+                <button onClick={()=>deleteModule(props.id)}>Delete</button>
                 <button onClick={handleUpdate}>Update</button>
 
 

@@ -83,6 +83,7 @@ const updateModule = async (req, res) => {
 
 //This works
 const deleteModule = async (req, res) => {
+    console.log('route works')
     try {
         const { id } = req.params
         const deleted = await Module.findByIdAndDelete(id)
