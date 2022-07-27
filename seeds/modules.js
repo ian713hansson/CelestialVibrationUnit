@@ -16,7 +16,7 @@ const main = async () => {
         {
             name: 'Mutamix',
             manufacturer: 'Intellijel',
-            function: ['Attenuator', 'Mixer', 'Sequencer', 'Switch'],
+            function: ['Attenuator', ' Mixer', ' Sequencer', ' Switch'],
             size: '18 HP',
             image: 'https://www.modulargrid.net/img/imagecache/587x826_197.jpg',
             description: 'A great little mixer here that can take 6 audio or cv inputs which can individually be assigned to one of three bus outputs for routing or audio sending. Features a control called X-mode which turns the Mutamix into a hybrid between a mixer and a sequencer.  Very solid utility model to help reign in the stardust.'

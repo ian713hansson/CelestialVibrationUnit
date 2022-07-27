@@ -2,7 +2,7 @@
 
 
 header nav a{
-  color: #edab28;
+  color: #ffc144;
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -24,8 +24,8 @@ header nav a{
 }
 
 .home-image {
-  border-radius: 20px;
-  width: 700px;
+  border-radius: 40px;
+  width: 1200px;
   height: 700px;
   margin: 5vh;
 }
