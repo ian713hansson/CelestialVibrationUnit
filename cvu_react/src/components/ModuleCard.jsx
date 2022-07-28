@@ -16,7 +16,9 @@ console.log(props)
         try{
         let res = await axios.put(`http://localhost:3001/api/modules/${props.id}`, formState)
         console.log(res)
-        setFormState('')}
+        setFormState('')
+        window.location.reload()}
+
         catch (error){
             throw error
         }
@@ -46,8 +48,8 @@ const deleteModule = async (id) => {
                 
         <div className='review-form'>
             <form onSubmit={handleReview}>
-                <label htmlFor='review'>Review this module</label>
-                <textarea id='review' cols='50' rows='10'onChange={handleChange} value={formState.review}></textarea>
+                <label htmlFor='review'>Review this module and tell us your name...</label>
+                <textarea id='review' cols='100' rows='10'onChange={handleChange} value={formState.review}></textarea>
                 <button type='review'>Review</button>
             </form>
         </div>
