@@ -39,13 +39,14 @@ function Member () {
                 <input type='text' id='manufacturer' onChange={handleChange} value={formState.manufacturer}/>
                 <label htmlFor='function'>Functions of Module</label>
                 <select id='function' onChange={handleChange} multiple={false} value={formState.function}>
-                    <option value='oscillator'>Oscillator</option>
-                    <option value='utility'>Utility</option>
-                    <option value='effect'>Effects</option>
-                    <option value='filter'>Filter</option>
-                    <option value='sequencer'>Sequencer</option>
-                    <option value='envelope'>Envelope</option>
-                    <option value='vca'>VCA</option>
+                    <option value='Oscillator'>Oscillator</option>
+                    <option value='Utility'>Utility</option>
+                    <option value='Effect'>Effects</option>
+                    <option value='Filter'>Filter</option>
+                    <option value='Sequencer'>Sequencer</option>
+                    <option value='Envelope'>Envelope</option>
+                    <option value='VCA'>VCA</option>
+                    <option value='Synth Voice'>Synth Voice</option>
                 </select>
                 <label htmlFor='size'>How many HP?</label>
                 <input type='text' id='size'onChange={handleChange} value={formState.size}/>
