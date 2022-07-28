@@ -6,8 +6,9 @@ function Member () {
     { 
         name: '', 
         manufacturer: '', 
-        function: [], 
+        function: '', 
         size: '', 
+        image: '',
         description: ''
     }
 
@@ -37,7 +38,7 @@ function Member () {
                 <label htmlFor='manufacturer'>Name of Manufacturer</label>
                 <input type='text' id='manufacturer' onChange={handleChange} value={formState.manufacturer}/>
                 <label htmlFor='function'>Functions of Module</label>
-                <select id='function' onChange={handleChange} value={formState.function}>
+                <select id='function' onChange={handleChange} multiple={false} value={formState.function}>
                     <option value='oscillator'>Oscillator</option>
                     <option value='utility'>Utility</option>
                     <option value='effect'>Effects</option>

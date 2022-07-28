@@ -10,7 +10,7 @@ const deleteModule = async (id) => {
     console.log('module deleted')
 }
 
-const handleUpdate = async () => {
+const handleUpdate = async (id) => {
     const { name, manufacturer, size, description } = (props)
     axios.put(`http://localhost:3001/api/modules/${props.id}`, {
         name: {name},
@@ -19,7 +19,6 @@ const handleUpdate = async () => {
         description: {description}
     })
 }
-
 
 
     return (
@@ -34,7 +33,7 @@ const handleUpdate = async () => {
                 <h3>{props.size}</h3>
                 <p>{props.description}</p>
                 <button onClick={()=>deleteModule(props.id)}>Delete</button>
-                <button onClick={handleUpdate}>Update</button>
+                <button onClick={()=>handleUpdate(props.id)}>Update</button>
 
 
         </div>

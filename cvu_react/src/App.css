@@ -60,6 +60,9 @@ header nav a{
 }
 
 form {
+  border-radius: 10px;
+  max-width: 50vh;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
