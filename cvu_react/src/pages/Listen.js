@@ -1,12 +1,10 @@
 import React from 'react'
-import ReactPlayer from 'react-player/lazy'
-import AudioPlayer from 'react-h5-audio-player'
-import 'react-h5-audio-player/lib/styles.css'
 
-
-
-const Listen = () => {
-   
+export default function Listen() {
+    
+    return (
+        <div className='vid-player'>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AbYR8wNWSSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    )
 }
-
-export default Listen

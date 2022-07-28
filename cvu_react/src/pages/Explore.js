@@ -34,6 +34,7 @@ const Explore = () => {
                         function={modules.function}
                         description={modules.description}
                         image={modules.image}
+                        review={modules.review}
                     />
                     </div>
                 ))}

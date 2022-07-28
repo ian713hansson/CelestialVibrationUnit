@@ -8,7 +8,8 @@ const Module = new Schema(
         function: { type: Array, required: true },
         size: { type: String, required: true },
         image: { type: String, required: true },
-        description: { type: String, required: true }
+        description: { type: String, required: true },
+        review: { type: String, required: false }
     },
     { timestamps: true }
 )

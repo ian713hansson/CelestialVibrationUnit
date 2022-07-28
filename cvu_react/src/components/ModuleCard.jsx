@@ -1,9 +1,26 @@
 import axios from 'axios'
-
+import React, { useState } from 'react'
 
 const ModuleCard = (props) => {
 console.log(props)
 
+
+    const [formState, setFormState] = useState('')
+
+    const handleChange = event => {
+        setFormState({ ...formState, [event.target.id]: event.target.value })
+    }
+    const handleReview = async (event) => {
+        event.preventDefault()
+        console.log(formState)
+        try{
+        let res = await axios.put(`http://localhost:3001/api/modules/${props.id}`, formState)
+        console.log(res)
+        setFormState('')}
+        catch (error){
+            throw error
+        }
+    }
 
 const deleteModule = async (id) => {
     console.log('hello', props.id, props.name)
@@ -11,20 +28,6 @@ const deleteModule = async (id) => {
     console.log('module deleted')
     
 }
-
-
-const handleUpdate = async (id) => {
-    console.log('got this far')
-    const { name, manufacturer, size, description } = (props)
-    axios.put(`http://localhost:3001/api/modules/${props.id}`, {
-        name: {name},
-        manufacturer: {manufacturer},
-        size: {size},
-        description: {description}
-    })
-    console.log('Update recieved')
-}
-
 
     return (
         <div className="card module-card" onClick={(props.onClick)}>
@@ -37,8 +40,16 @@ const handleUpdate = async (id) => {
                 <h3>{props.function}</h3>
                 <h3>{props.size}</h3>
                 <p>{props.description}</p>
+                <p>{props.review}</p>
                 <button onClick={()=>deleteModule(props.id, window.location.reload())}>Delete</button>
-                <button onClick={()=>handleUpdate(props.id)}>Update</button>
+                
+        <div className='review-form'>
+            <form onSubmit={handleReview}>
+                <label htmlFor='review'>Review this module</label>
+                <textarea id='review' cols='50' rows='10'onChange={handleChange} value={formState.review}></textarea>
+                <button type='review'>Review</button>
+            </form>
+        </div>
 
 
         </div>
