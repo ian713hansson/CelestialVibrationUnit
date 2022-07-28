@@ -25,6 +25,7 @@ console.log(props)
 const deleteModule = async (id) => {
     console.log('hello', props.id, props.name)
     await axios.delete(`http://localhost:3001/api/modules/${props.id}`)
+    
     console.log('module deleted')
     
 }

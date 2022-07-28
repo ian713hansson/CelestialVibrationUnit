@@ -61,8 +61,22 @@ header nav a{
 
 form {
   border-radius: 10px;
-  max-width: 50vh;
+  width: 50vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.vid-player {
+  padding: 2em 0;
+  display: grid;
+  grid-gap: 2em;
+  justify-content: center;
+}
+
+.member-form {
+  padding: 2em 0;
+  display: grid;
+  grid-gap: 2em;
+  justify-content: center;
 }
