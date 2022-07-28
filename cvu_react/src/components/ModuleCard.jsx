@@ -17,11 +17,13 @@ console.log(props)
         let res = await axios.put(`http://localhost:3001/api/modules/${props.id}`, formState)
         console.log(res)
         setFormState('')
-        window.location.reload()}
+        window.location.reload()
+    }
 
         catch (error){
             throw error
-        }
+        } 
+        
     }
 
 const deleteModule = async (id) => {
