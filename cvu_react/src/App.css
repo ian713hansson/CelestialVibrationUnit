@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-
-header nav a{
-  color: #ffc144;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-}
-
 .header {
   display: flex;
   justify-content: center;
@@ -15,7 +7,14 @@ header nav a{
   flex-wrap: wrap;
   margin-top: 20px;
   align-items: center;
-  height: 150px;
+  height: 150px
+}
+
+header nav a {
+  color: #ffc144;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
 .image-home {
