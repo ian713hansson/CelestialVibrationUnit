@@ -32,7 +32,7 @@ function Member () {
 
     return (
         <div className='member-form'>
-            <form onSubmit={handleSubmit}>
+            <form className='member-input' onSubmit={handleSubmit}>
                 <label htmlFor='name'>Name of Module</label>
                 <input type="text" id='name' onChange={handleChange} value={formState.name}/>
                 <label htmlFor='manufacturer'>Name of Manufacturer</label>
@@ -56,6 +56,9 @@ function Member () {
                 <textarea id='description' cols='30' rows='10'onChange={handleChange} value={formState.description}></textarea>
                 <button type='submit'>Submit</button>
             </form>
+            <div className='member-img'>
+                <img className='member-overlay' src='https://i.imgur.com/Iil85d3.jpg' />
+            </div>
         </div>
     )
 }
