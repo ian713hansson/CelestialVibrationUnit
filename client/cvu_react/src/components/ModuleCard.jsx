@@ -14,7 +14,7 @@ console.log(props)
         event.preventDefault()
         console.log(formState)
         try{
-        let res = await axios.put(`http://localhost:3001/api/modules/${props.id}`, formState)
+        let res = await axios.put(`https://celestial-vibe.herokuapp.com/api/modules/${props.id}`, formState)
         console.log(res)
         setFormState('')
         window.location.reload()
@@ -28,7 +28,7 @@ console.log(props)
 
 const deleteModule = async (id) => {
     console.log('hello', props.id, props.name)
-    await axios.delete(`http://localhost:3001/api/modules/${props.id}`)
+    await axios.delete(`https://celestial-vibe.herokuapp.com/api/modules/${props.id}`)
     
     console.log('module deleted')
     
