@@ -23,7 +23,7 @@ function Member () {
         event.preventDefault()
         console.log(formState)
 
-        let res = await axios.post('https://celestial-vibe.herokuapp.com/api/modules', formState)
+        let res = await axios.post('https://celestial-vibes.herokuapp.com/api/modules', formState)
         console.log(res)
         setFormState(initialState)
     }

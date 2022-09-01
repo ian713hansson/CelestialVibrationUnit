@@ -7,7 +7,7 @@ const Explore = () => {
 
     useEffect(() => {
         const getModules = async () => {
-            const res = await axios.get('https://celestial-vibe.herokuapp.com/api/modules')
+            const res = await axios.get('https://celestial-vibes.herokuapp.com/api/modules')
             console.log(res.data.modules)
             setModules(res.data.modules) 
             console.log(modules)
